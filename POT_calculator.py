@@ -10,7 +10,7 @@ directory = '/pnfs/annie/persistent/processed/BeamFetcherV2/'
 #file_list = ['beamfetcher_' + str(runs[i]) + '.root' for i in range(len(runs))]
 
 # comment if manually entering runs
-df = pd.read_csv('/exp/annie/app/users/doran/scripts/grid_runs_processing/ANNIE_SQL_2024.csv')
+df = pd.read_csv('/exp/annie/app/users/doran/scripts/grid_runs_processing/ANNIE_SQL_RUNS.csv')
 file_list = []
 for runnum in df['runnum']:
     root_file = f'beamfetcher_{runnum}.root'
