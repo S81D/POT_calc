@@ -5,16 +5,19 @@ import pandas as pd
 
 directory = '/pnfs/annie/persistent/processed/BeamFetcherV2/'
 
-df = pd.read_csv('/exp/annie/app/users/doran/scripts/grid_runs_processing/ANNIE_SQL_2024.csv')
-
+# uncomment if manually entering runs
 #runs = [4763, 4764, 4765, 4766]
 #file_list = ['beamfetcher_' + str(runs[i]) + '.root' for i in range(len(runs))]
 
+# comment if manually entering runs
+df = pd.read_csv('/exp/annie/app/users/doran/scripts/grid_runs_processing/ANNIE_SQL_2024.csv')
 file_list = []
 for runnum in df['runnum']:
     root_file = f'beamfetcher_{runnum}.root'
     if os.path.exists(directory + root_file):
         file_list.append(root_file)
+
+# -------------------------------------- #
 
 pot_875 = []; pot_860 = []; run_files = []
 
