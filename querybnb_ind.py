@@ -6,6 +6,7 @@
 #####################################################################################################################################
 
 # Sliglty modify by M. Ascencio
+# https://github.com/marvlad/ANNIE_scripts/blob/main/querybnb_ind.py
 
 # Stolen from Marvin by Steven :)
 
