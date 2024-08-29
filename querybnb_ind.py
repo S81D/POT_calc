@@ -7,6 +7,8 @@
 
 # Sliglty modify by M. Ascencio
 
+# Stolen from Marvin by Steven :)
+
 import urllib.request, sys
 from datetime import datetime, tzinfo, timedelta
 import time
