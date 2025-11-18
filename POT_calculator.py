@@ -3,6 +3,8 @@ import numpy as np
 import uproot
 import pandas as pd
 
+# Author: Steven Doran
+
 # ------------------------------------------------- #
 # modify accordingly
 
